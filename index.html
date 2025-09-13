@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 요가 루틴</title>
+    <!-- 부트스트랩 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .card-pool .card, .routine-area .card {
+            margin: 5px;
+            cursor: grab;
+        }
+        .video-list button {
+            margin: 3px;
+        }
+        .kakao-map {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 사이트 소개 헤더 -->
+    <header class="section site-intro text-center">
+        <h1>🧘 나만의 요가 루틴</h1>
+        <p>자신만의 페이스로 어디서나 아쉬탕가 요가의 매력을 느껴보세요.<br>
+        나만의 루틴을 구성하고 수련 기록까지 남길 수 있는 웹사이트입니다.</p>
+    </header>
+
+
+    <!-- 오늘의 요가 루틴 선택 -->
+    <section class="section today-routine">
+        <h2>🎯 오늘의 요가 루틴 선택</h2>
+        <div class="mb-3">
+            <label class="form-label">루틴 선택:</label>
+            <select class="form-select routine-select">
+                <option value="morning">아침 루틴</option>
+                <option value="evening">저녁 루틴</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">목표 시간 (분):</label>
+            <input type="number" class="form-control goal-time" min="5" max="120">
+        </div>
+    </section>
+
+    <!-- 오디오 플레이어 -->
+    <section class="section audio-player">
+        <h2>🎵 명상/호흡 음악</h2>
+        <audio class="meditation-audio" controls>
+            <source src="audio/meditation.mp3" type="audio/mp3">
+            브라우저가 오디오를 지원하지 않습니다.
+        </audio>
+        <div class="audio-list mt-2">
+            <button class="btn btn-outline-secondary btn-sm">가이드 1</button>
+            <button class="btn btn-outline-secondary btn-sm">가이드 2</button>
+            <button class="btn btn-outline-secondary btn-sm">음악 1</button>
+        </div>
+    </section>
+
+    <!-- 요가 영상 플레이어 -->
+    <section class="section video-player">
+        <h2>📹 요가 영상 플레이어</h2>
+        <video class="yoga-video mb-3" controls width="100%">
+            <source src="" type="video/mp4">
+            영상이 지원되지 않는 브라우저입니다.
+        </video>
+        <div class="video-list">
+            <button class="btn btn-outline-primary btn-sm">영상 1</button>
+            <button class="btn btn-outline-primary btn-sm">영상 2</button>
+            <button class="btn btn-outline-primary btn-sm">영상 3</button>
+        </div>
+    </section>
+
+    <!-- 드래그 앤 드롭 루틴 구성 -->
+    <section class="section routine-builder">
+        <h2>🎨 루틴 구성</h2>
+        <div class="d-flex flex-wrap card-pool mb-3">
+            <div class="card p-2">요가 동작 1</div>
+            <div class="card p-2">요가 동작 2</div>
+            <div class="card p-2">스트레칭</div>
+            <div class="card p-2">호흡</div>
+            <div class="card p-2">명상</div>
+        </div>
+        <div class="routine-area border p-3">
+            <p>여기에 카드를 드래그하여 루틴 구성</p>
+        </div>
+    </section>
+
+    <!-- 수행한 루틴 기록 -->
+    <section class="section routine-log">
+        <h2>📊 수행 기록</h2>
+        <ul class="log-list list-group">
+            <!-- 로컬스토리지에서 불러올 기록 -->
+        </ul>
+    </section>
+
+    <!-- 지도 -->
+    <section class="section map">
+        <h2>🗺️ 요가 스튜디오 / 공원 위치</h2>
+        <div class="kakao-map" style="width:100%;height:400px;"></div>
+    </section>
+
+    <!-- 부트스트랩 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 앱 기능 JS 연결 -->
+    <script src="app.js"></script>
+</body>
+</html>
+
