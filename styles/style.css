@@ -22,24 +22,23 @@ body.dark-mode {
   text-align: left; /* 텍스트도 왼쪽 정렬 */
 }
 
-/* 로고 */
-.intro-logo {
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-
+/* 이미지 아이콘 */
+.section-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1rem;
 }
 
-.intro-logo svg {
-  width: 80%;
-  height: 80%;
+.section-header .intro-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.section-header .intro-text h2,
+.section-header .intro-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 /* 텍스트 */
@@ -68,7 +67,7 @@ body.dark-mode {
   background: url('../images/blue-purple-abstract-background.jpg') no-repeat center/cover;
 }
 
-/* 로고 + 텍스트 가로 정렬 */
+/* 애니매이터 로고 + 텍스트 가로 정렬 */
 .hero-brand {
   display: flex;
   align-items: center;
@@ -77,7 +76,7 @@ body.dark-mode {
   width: 100%;
 }
 
-/* Lottie 로고 */
+/* 애니매이터 로고 */
 .hero-logo {
   width: 150px;   /* 조금 줄여서 Hero 높이에 맞춤 */
   height: 150px;
@@ -116,12 +115,109 @@ body.dark-mode {
   align-items: center;
   justify-content: center;
 
-  padding: 0; /* 🔹 여백 제거 */
+  padding: 0; 
 }
 
 .intro-icon {
-  width: 95%;   /* 🔹 거의 꽉 차도록 */
+  width: 95%; 
   height: auto;
+}
+
+/* 루틴 카드 */
+
+/* 선택 안 된 탭 */
+.nav-tabs .nav-link {
+  color: #000 !important;   /* 검정색 */
+}
+
+/* 선택된 탭 */
+.nav-tabs .nav-link.active {
+  color: #A0522D !important;      /* 예쁜 갈색 */
+  font-weight: bold;
+  border-bottom: 2px solid #A0522D; /* 밑줄도 갈색 */
+}
+
+/* 카드 전체 크기 */
+.yoga-card {
+  width: 180px;
+  height: 220px;
+  background: linear-gradient(145deg, #fff, #f1f1f1);
+  border: 3px solid #444;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  transition: transform 0.2s ease;
+  overflow: hidden; /* 내용 넘치면 잘라냄 */
+}
+
+/* 제목 영역 (고정 높이) */
+.card-header {
+  flex: 0 0 40px;      /* 높이 고정 */
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: #ffe066;
+  border-bottom: 2px solid #444;
+  padding: 6px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 이미지 영역 (중간 고정) */
+.card-image {
+  flex: 1;        /* 남은 공간을 다 이미지가 차지 */
+  min-height: 100px;
+  max-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 동작 설명 영역 */
+.card-desc {
+  flex: 0 0 50px;   /* 높이 고정: 약 2줄 정도 */
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 4px;
+  background: #f8f9fa;
+  border-top: 2px solid #444;
+
+  /* 글자 2줄까지만 보이게 (넘치면 …) */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* 2줄 제한 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* 드래그 앤 드롭 영역 */
+#routine-area {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  overflow-x: auto;     /* 가로 스크롤 허용 */
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/* 요가 카드 크기 고정 */
+#routine-area .yoga-card {
+  width: 180px;   /* 원래 크기 복구 */
+  height: 220px;  /* 원래 크기 복구 */
+  flex-shrink: 0; /* 크기 절대 줄어들지 않게 */
 }
 
 

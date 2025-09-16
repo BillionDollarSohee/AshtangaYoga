@@ -17,176 +17,246 @@
 <body>
     <!-- Hero 섹션 -->
     <section class="hero">
-    <div class="hero-brand">
-        <!-- Lottie 로고 -->
+      <div class="hero-brand">
         <div class="hero-logo" id="logo-lottie"></div>
-        <!-- 텍스트 -->
         <div class="hero-text">
-        <h1>Flow Space</h1>
-        <p>플로우(flow)와 공간(space)을 합친 말로</p>
-        <p>어느 공간에서도 요가의 흐름을 이어간다는 의미로</p>
-        <p>나만의 루틴을 구성하고 수련 기록까지 남길 수 있는 웹사이트입니다.</p>
+          <h1>Flow Space</h1>
+          <p>플로우(flow)와 공간(space)을 합친 말로</p>
+          <p>어느 공간에서도 요가의 흐름을 이어간다는 의미로</p>
+          <p>나만의 루틴을 구성하고 수련 기록까지 남길 수 있는 웹사이트입니다.</p>
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- 사이트 소개 헤더 -->
-<header class="section site-intro">
-  <div class="intro-logo">
-    <img src="images/yoga-svgrepo-com.svg" alt="요가 아이콘" class="intro-icon" />
-  </div>
-  <div class="intro-text">
-    <h1>나만의 요가 루틴</h1>
-    <p>
-      자신만의 페이스로 어디서나 아쉬탕가 요가의 매력을 느껴보세요.<br>
-    </p>
-  </div>
-</header>
+    <header class="section site-intro">
+      <div class="intro-logo">
+        <img src="images/yoga-svgrepo1.svg" alt="요가 아이콘" class="intro-icon" />
+      </div>
+      <div class="intro-text">
+        <h1>나만의 요가 루틴</h1>
+        <p>자신만의 페이스로 어디서나 아쉬탕가 요가의 매력을 느껴보세요.<br></p>
+      </div>
+    </header>
 
-
-    <!-- 오늘의 요가 루틴 선택 -->
+    <!-- 오늘의 아쉬탕가 루틴 선택 -->
     <section class="section today-routine">
-    <h2>🎯 오늘의 요가 루틴 선택</h2>
-    <div class="mb-3">
+      <h2>오늘의 아쉬탕가 루틴 선택</h2>
+      <div class="mb-3">
         <label class="form-label">루틴 선택:</label>
         <select class="form-select routine-select">
-        <option value="quick">Quick Flow (20~30분)</option>
-        <option value="half">Half Sequence (40분)</option>
-        <option value="full">Full Sequence (60분)</option>
+          <option value="quick">Quick Flow (20~30분)</option>
+          <option value="half">Half Sequence (40분)</option>
+          <option value="full">Full Sequence (60분)</option>
         </select>
-    </div>
-    <div class="mb-3">
+      </div>
+      <div class="mb-3">
         <label class="form-label">목표 시간 (분):</label>
         <input type="number" class="form-control goal-time" min="5" max="120">
-    </div>
+      </div>
     </section>
 
-    <!-- 🎨 드래그 앤 드롭 루틴 구성 (메인) -->
-    <section class="section routine-builder">
-    <h2>🎨 루틴 구성</h2>
-    <div class="d-flex flex-wrap card-pool mb-3">
-        <div class="card p-2" draggable="true">🌞 태양경배 A</div>
-        <div class="card p-2" draggable="true">🌞 태양경배 B</div>
-        <div class="card p-2" draggable="true">🧘 전굴</div>
-        <div class="card p-2" draggable="true">🌀 비틀기</div>
-        <div class="card p-2" draggable="true">🪷 브릿지</div>
-        <div class="card p-2" draggable="true">🛏 샤바사나</div>
+   <!-- 🎨 드래그 앤 드롭 루틴 구성 -->
+  <section class="section routine-builder">
+    <!-- 상단 안내 카드 -->
+    <div class="card shadow-sm p-3 mb-4">
+      <div class="card-body d-flex align-items-center">
+        <div class="me-3">
+          <img src="images/yoga-svgrepo2.svg" alt="루틴 아이콘" class="rounded-circle" width="60" height="60">
+        </div>
+        <div>
+          <h5 class="card-title fw-bold mb-1">루틴 구성</h5>
+          <p class="card-text text-muted mb-0">자신만의 루틴을 만들어보세요.</p>
+        </div>
+      </div>
     </div>
+
+    <!-- 탭 메뉴 -->
+
+    <ul class="nav nav-tabs mb-3" id="routineTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="standing-tab" data-bs-toggle="tab" href="#standing" role="tab">Standing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="seated-tab" data-bs-toggle="tab" href="#seated" role="tab">Seated</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="finishing-tab" data-bs-toggle="tab" href="#finishing" role="tab">Finishing</a>
+      </li>
+    </ul>
+
+    <!-- 탭 콘텐츠 -->
+    <div class="tab-content mb-3">
+      <div class="tab-pane fade show active" id="standing" role="tabpanel">
+        <div id="card-pool-standing" class="d-flex flex-wrap card-pool"></div>
+      </div>
+      <div class="tab-pane fade" id="seated" role="tabpanel">
+        <div id="card-pool-seated" class="d-flex flex-wrap card-pool"></div>
+      </div>
+      <div class="tab-pane fade" id="finishing" role="tabpanel">
+        <div id="card-pool-finishing" class="d-flex flex-wrap card-pool"></div>
+      </div>
+    </div>
+
+    <!-- 드래그 앤 드롭 영역 -->
     <div class="routine-area border p-3">
-        <p class="text-muted">여기에 카드를 드래그하여 루틴을 구성하세요</p>
+      <p class="text-muted">여기에 카드를 드래그하여 루틴을 구성하세요</p>
+      <div id="routine-area" class="card-container">
+        <!-- 드래그된 카드들이 여기에 추가됨 -->
+      </div>
     </div>
-    </section>
+
 
     <!-- 오디오 플레이어 -->
     <section class="section audio-player">
-        <h2>🎵 명상/호흡 음악</h2>
-        <!-- <audio class="meditation-audio" controls>
-            <source src="audio/meditation.mp3" type="audio/mp3">
-            브라우저가 오디오를 지원하지 않습니다.
-        </audio> -->
-        <div class="audio-list mt-2">
-            <button class="btn btn-outline-secondary btn-sm">가이드 1</button>
-            <button class="btn btn-outline-secondary btn-sm">가이드 2</button>
-            <button class="btn btn-outline-secondary btn-sm">음악 1</button>
-        </div>
+      <h2>🎵 명상/호흡 음악</h2>
+      <div class="audio-list mt-2">
+        <button class="btn btn-outline-secondary btn-sm">가이드 1</button>
+        <button class="btn btn-outline-secondary btn-sm">가이드 2</button>
+        <button class="btn btn-outline-secondary btn-sm">음악 1</button>
+      </div>
     </section>
 
     <!-- 요가 영상 플레이어 -->
     <section class="section video-player">
-        <h2>📹 요가 영상 플레이어</h2>
-        <!-- <video class="yoga-video mb-3" controls width="100%">
-            <source src="" type="video/mp4">
-            영상이 지원되지 않는 브라우저입니다.
-        </video> -->
-        <div class="video-list">
-            <button class="btn btn-outline-primary btn-sm">영상 1</button>
-            <button class="btn btn-outline-primary btn-sm">영상 2</button>
-            <button class="btn btn-outline-primary btn-sm">영상 3</button>
-        </div>
+      <h2>📹 요가 영상 플레이어</h2>
+      <div class="video-list">
+        <button class="btn btn-outline-primary btn-sm">영상 1</button>
+        <button class="btn btn-outline-primary btn-sm">영상 2</button>
+        <button class="btn btn-outline-primary btn-sm">영상 3</button>
+      </div>
     </section>
-
 
     <!-- 수행한 루틴 기록 -->
     <section class="section routine-log">
-        <h2>📊 수행 기록</h2>
-        <ul class="log-list list-group">
-            <!-- 로컬스토리지에서 불러올 기록 -->
-        </ul>
+      <h2>📊 수행 기록</h2>
+      <ul class="log-list list-group">
+        <!-- 로컬스토리지에서 불러올 기록 -->
+      </ul>
     </section>
 
     <!-- 지도 -->
     <section class="section map">
-        <h2>🗺️ 요가 스튜디오 / 공원 위치</h2>
-        <p class="text-muted">어디서든 나마스떼 🧘</p>
-        <div class="kakao-map" style="width:100%;height:400px;"></div>
+      <h2>🗺️ 요가 스튜디오 / 공원 위치</h2>
+      <p class="text-muted">어디서든 나마스떼 🧘</p>
+      <div class="kakao-map" style="width:100%;height:400px;"></div>
     </section>
+
+    <!-- 푸터 -->
+    <footer class="site-footer text-center p-3 mt-4">
+      <p>© 2025 Flow Space | Created & maintained by Sohee Kim</p>
+      <div class="footer-links">
+        <a href="https://github.com/BillionDollarSohee" target="_blank">프로필</a> |
+        <a href="https://github.com/BillionDollarSohee/AshtangaYoga" target="_blank">레포지토리</a>
+      </div>
+      <div class="footer-controls mt-2">
+        <label for="font-size-control" class="me-2 small">글씨 크기</label>
+        <input type="range" id="font-size-control" min="14" max="22" value="16">
+        <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-3">🌙 다크모드</button>
+      </div>
+    </footer>
 
     <!-- 부트스트랩 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- 연꽃 로고 Lottie 애니메이션 로드 -->
+     <!-- 모든 스크립트 한 곳에 모으기 -->
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. Lottie 애니메이션
         lottie.loadAnimation({
-        container: document.getElementById("logo-lottie"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "animations/Yogalotusflower.json"
+          container: document.getElementById("logo-lottie"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "animations/Yogalotusflower.json"
         });
-    });
-    </script>
 
-    <!-- 다크모드와 글씨 크기 조절 -->
-    <script>
-    const fontSizeControl = document.getElementById('font-size-control');
-    const darkModeToggle = document.getElementById('darkModeToggle');
+        // 2. 드래그 앤 드롭
+        // JSON 불러오기
+        fetch("data/poses.json")
+          .then(res => res.json())
+          .then(poses => {
+            // 카테고리별 카드 풀 매핑
+            const poolMap = {
+              Standing: document.getElementById("card-pool-standing"),
+              Seated: document.getElementById("card-pool-seated"),
+              Finishing: document.getElementById("card-pool-finishing")
+            };
 
-    // 페이지 로드 시 다크모드 상태 복원
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        if (darkModeToggle) darkModeToggle.textContent = '☀️ 라이트모드';
-    }
+            poses.forEach(pose => {
+              const card = document.createElement("div");
+              card.className = "yoga-card";
+              card.setAttribute("draggable", "true");
 
-    // 글씨 크기 조절
-    fontSizeControl?.addEventListener('input', function () {
-        document.body.style.fontSize = this.value + 'px';
-    });
+              card.innerHTML = `
+                <div class="card-header">${pose.name}</div>
+                <div class="card-image">
+                  <img src="${pose.image}" alt="${pose.name}">
+                </div>
+                <div class="card-desc">${pose.desc}</div>
+              `;
 
-    // 다크모드 토글
-    darkModeToggle?.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        console.log("버튼 클릭됨 → 현재 body 클래스:", document.body.className);
+              // 드래그 이벤트
+              card.addEventListener("dragstart", e => {
+                e.dataTransfer.setData("text/plain", JSON.stringify(pose));
+              });
 
-        if (document.body.classList.contains('dark-mode')) {
-            this.textContent = '☀️ 라이트모드';
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            this.textContent = '🌙 다크모드';
-            localStorage.setItem('darkMode', 'disabled');
+              // 해당 카테고리에 맞는 풀에 넣기
+              if (poolMap[pose.category]) {
+                poolMap[pose.category].appendChild(card);
+              }
+            });
+          });
+
+        // 드롭 영역 이벤트
+        const routineArea = document.getElementById("routine-area");
+
+        routineArea.addEventListener("dragover", e => {
+          e.preventDefault(); // 드롭 허용
+        });
+
+        routineArea.addEventListener("drop", e => {
+          e.preventDefault();
+          const data = e.dataTransfer.getData("text/plain");
+          const pose = JSON.parse(data);
+
+          const card = document.createElement("div");
+          card.className = "yoga-card";
+          card.innerHTML = `
+            <div class="card-header">${pose.name}</div>
+            <div class="card-image">
+              <img src="${pose.image}" alt="${pose.name}">
+            </div>
+            <div class="card-desc">${pose.desc}</div>
+          `;
+
+          routineArea.appendChild(card);
+        });
+
+        // 3. 다크모드 & 폰트 크기 조절
+        const fontSizeControl = document.getElementById("font-size-control");
+        const darkModeToggle = document.getElementById("darkModeToggle");
+
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.body.classList.add("dark-mode");
+          if (darkModeToggle) darkModeToggle.textContent = "☀️ 라이트모드";
         }
-        });
-    </script>
 
-    <!-- 푸터 -->
-    <footer class="site-footer text-center p-3 mt-4">
-        <p>© 2025 Flow Space | Created & maintained by Sohee Kim</p>
-        <div class="footer-links">
-            <a href="https://github.com/BillionDollarSohee" target="_blank">
-                프로필
-            </a>
-            |
-            <a href="https://github.com/BillionDollarSohee/AshtangaYoga" target="_blank">
-                레포지토리
-            </a>
-        </div>
-        <div class="footer-controls mt-2">
-            <label for="font-size-control" class="me-2 small">글씨 크기</label>
-            <input type="range" id="font-size-control" min="14" max="22" value="16">
-            <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-3">
-                🌙 다크모드
-            </button>
-        </div>
-    </footer>
-</body>
+        fontSizeControl?.addEventListener("input", function () {
+          document.body.style.fontSize = this.value + "px";
+        });
+
+        darkModeToggle?.addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          if (document.body.classList.contains("dark-mode")) {
+            this.textContent = "☀️ 라이트모드";
+            localStorage.setItem("darkMode", "enabled");
+          } else {
+            this.textContent = "🌙 다크모드";
+            localStorage.setItem("darkMode", "disabled");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

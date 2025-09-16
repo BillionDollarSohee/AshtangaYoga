@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>드래그 앤 드롭 테스트</title>
+  <style>
+    .card { width: 120px; padding: 10px; margin: 5px; background: #f39c12; cursor: grab; }
+    .routine-area { border: 2px dashed #3498db; min-height: 200px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h2>🎨 루틴 구성</h2>
+
+  <!-- 카드 -->
+  <div class="card" draggable="true">🌞 태양경배 A</div>
+  <div class="card" draggable="true">🧘 전굴</div>
+  <div class="card" draggable="true">🛏 샤바사나</div>
+
+  <!-- 루틴 영역 -->
+  <div class="routine-area">
+    <p class="text-muted">여기에 카드를 드래그하여 루틴을 구성하세요</p>
+  </div>
+
+  <!-- 스크립트 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll('.card');
+      const routineArea = document.querySelector('.routine-area');
+      const routineMsg = routineArea.querySelector('p');
+
+      // 드래그 시작
+      cards.forEach(card => {
+        card.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', card.textContent);
+          e.dataTransfer.effectAllowed = "copy";
+        });
+      });
+
+      // 루틴 영역 위에서 드래그 허용
+      routineArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "copy";
+      });
+
+      // 드롭
+      routineArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const text = e.dataTransfer.getData('text/plain');
+
+        if (routineMsg) routineMsg.remove();
+
+        const newCard = document.createElement('div');
+        newCard.className = "card";
+        newCard.textContent = text;
+
+        routineArea.appendChild(newCard);
+      });
+    });
+  </script>
+</body>
+</html>
