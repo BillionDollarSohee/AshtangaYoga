@@ -137,78 +137,107 @@ body.dark-mode {
   border-bottom: 2px solid #A0522D; /* 밑줄도 갈색 */
 }
 
-/* 카드 전체 크기 */
+/* 카드 전체 */
 .yoga-card {
-  width: 180px;
-  height: 220px;
-  background: linear-gradient(145deg, #fff, #f1f1f1);
-  border: 3px solid #444;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  width: 165px;     /* 7개 맞추기 위한 가로 */
+  height: 190px;    /* 기존 230px → 200px 로 줄임 */
+  perspective: 1000px;
   margin: 8px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* hover 시 뒤집힘 */
+.yoga-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 앞면 / 뒷면 공통 */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  cursor: grab;
-  transition: transform 0.2s ease;
-  overflow: hidden; /* 내용 넘치면 잘라냄 */
-}
-
-/* 제목 영역 (고정 높이) */
-.card-header {
-  flex: 0 0 40px;      /* 높이 고정 */
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  background: #ffe066;
-  border-bottom: 2px solid #444;
-  padding: 6px;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-/* 이미지 영역 (중간 고정) */
-.card-image {
-  flex: 1;        /* 남은 공간을 다 이미지가 차지 */
-  min-height: 100px;
-  max-height: 130px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 4px;
-}
-.card-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  padding: 8px;
 }
 
-/* 동작 설명 영역 */
-.card-desc {
-  flex: 0 0 50px;   /* 높이 고정: 약 2줄 정도 */
-  width: 100%;
+/* 카드 앞면 */
+.card-front {
+  position: relative;        /* 자식 absolute 기준 */
+  background: linear-gradient(145deg, #fff, #f9f9f9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 6px; /* 여백 */
+  height: 100%;
   text-align: center;
-  font-size: 0.75rem;
-  padding: 4px;
-  background: #f8f9fa;
-  border-top: 2px solid #444;
-
-  /* 글자 2줄까지만 보이게 (넘치면 …) */
-  display: -webkit-box;
-  -webkit-line-clamp: 2;  /* 2줄 제한 */
-  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+/* 제목 */
+.card-front h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #333;
+  line-height: 1.2;
+  word-break: keep-all;
+  white-space: normal;
+  text-align: center;
+  z-index: 2;                /* 이미지 위에 표시 */
+  width: 100%;               /* 카드 벗어나지 않게
+  word-break: break-word;  /* 긴 단어 강제 줄바꿈 */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 이미지 */
+.card-front img {
+  position: absolute;        /* 카드 바닥에 고정 */
+  bottom: 25px;               /* 일정한 여백 */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  max-height: 95px;
+  object-fit: contain;
+  z-index: 1;                /* 제목보다 뒤 */
+}
+/* 뒷면 */
+.card-back {
+  background: #ffe066;
+  transform: rotateY(180deg);
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+.card-back .pronunciation {
+  font-style: italic;
+  margin-top: 6px;
+  color: #555;
+  font-size: 0.75rem;
+}
 
 /* 드래그 앤 드롭 영역 */
 #routine-area {
   display: flex;
   flex-direction: row;
   gap: 12px;
-  overflow-x: auto;     /* 가로 스크롤 허용 */
+  overflow-x: auto; /* 가로 스크롤 */
   align-items: flex-start;
   padding: 10px;
 }
