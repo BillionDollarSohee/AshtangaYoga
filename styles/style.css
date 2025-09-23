@@ -177,7 +177,6 @@ body.dark-mode {
 
 /* 카드 앞면 */
 .card-front {
-  position: relative;        /* 자식 absolute 기준 */
   background: linear-gradient(145deg, #fff, #f9f9f9);
   display: flex;
   flex-direction: column;
@@ -189,47 +188,62 @@ body.dark-mode {
   overflow: hidden;
 }
 
-/* 제목 */
 .card-front h5 {
+  position: relative;        /* z-index가 먹히도록 설정 */
+  z-index: 2;                /* 이미지보다 위로 올라감 */
   font-size: 1rem;
   font-weight: bold;
   margin: 0 0 8px 0;
+  margin-top: 10px;
   color: #333;
   line-height: 1.2;
   word-break: keep-all;
   white-space: normal;
   text-align: center;
-  z-index: 2;                /* 이미지 위에 표시 */
-  width: 100%;               /* 카드 벗어나지 않게
-  word-break: break-word;  /* 긴 단어 강제 줄바꿈 */
+  width: 100%;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* 이미지 */
 .card-front img {
-  position: absolute;        /* 카드 바닥에 고정 */
-  bottom: 25px;               /* 일정한 여백 */
+  position: absolute;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 90%;
-  max-height: 95px;
+  max-width: 600%;   /* 가로 제한 조금 늘림 */
+  max-height: 600px; /* 세로 제한 조금 늘림 */
   object-fit: contain;
-  z-index: 1;                /* 제목보다 뒤 */
+  z-index: 1;
 }
+
 /* 뒷면 */
 .card-back {
+  display: flex;
+  flex-direction: column;   /* 세로로 쌓이게 */
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
   background: #ffe066;
   transform: rotateY(180deg);
-  text-align: center;
-  font-size: 0.8rem;
-  color: #333;
+  text-align: left;
+  line-height: 1.5;
+  color: #222;
 }
+
+/* 발음(=제목 역할)을 위로 올리기 */
 .card-back .pronunciation {
-  font-style: italic;
-  margin-top: 6px;
-  color: #555;
-  font-size: 0.75rem;
+  order: -1;                /* 맨 위로 이동 */
+  font-size: 1.1rem;        /* 제목처럼 크게 */
+  font-weight: bold;
+  color: #111;
+  margin: 0 0 12px 0;       /* 아래 여백 */
+  font-style: normal;       /* 기울임 해제 */
+}
+
+/* 설명문 */
+.card-back {
+  font-size: 0.9rem;
+  color: #333;
 }
 
 /* 드래그 앤 드롭 영역 */

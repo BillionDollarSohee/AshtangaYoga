@@ -1,316 +1,272 @@
 [
   {
     "category": "Standing",
-    "name": "Surya Namaskara A",
+    "name": "수리야 나마스카라 A",
     "image": "images/poses/140943.png",
-    "desc": "차투랑가 기본 시퀀스. 몸을 데우고 호흡을 맞추는 준비 동작.",
-    "pronunciation": "수리야 나마스카라 A"
+    "desc": "차투랑가 기본 시퀀스. 몸을 데우고 호흡을 맞추는 준비 동작."
   },
   {
     "category": "Standing",
-    "name": "Surya Namaskara B",
+    "name": "수리야 나마스카라 B",
     "image": "images/poses/141408.png",
-    "desc": "태양경배에서 무릎 굽힘과 전사 자세가 추가되어 강도를 높임.",
-    "pronunciation": "수리야 나마스카라 B"
+    "desc": "태양경배에서 무릎 굽힘과 전사 자세가 추가되어 강도를 높임."
   },
   {
     "category": "Standing",
-    "name": "Padangusthasana",
+    "name": "파당구스타사나",
     "image": "images/poses/140943.png",
-    "desc": "양손으로 엄지발가락을 잡고 몸을 숙여 햄스트링과 척추를 늘려줌.",
-    "pronunciation": "파당구스타사나"
+    "desc": "양손으로 엄지발가락을 잡고 몸을 숙여 햄스트링과 척추를 늘려줌."
   },
   {
     "category": "Standing",
-    "name": "Padahastasana",
+    "name": "파다하스타사나",
     "image": "images/poses/141545.png",
-    "desc": "발 밑에 손을 넣고 상체를 숙여 상체와 다리를 깊게 스트레칭.",
-    "pronunciation": "파다하스타사나"
+    "desc": "발 밑에 손을 넣고 상체를 숙여 상체와 다리를 깊게 스트레칭."
   },
   {
     "category": "Standing",
-    "name": "Utthita Trikonasana",
+    "name": "우티타 트리코나사나",
     "image": "images/poses/141616.png",
-    "desc": "옆구리를 늘리고 척추를 펴는 균형 자세.",
-    "pronunciation": "우티타 트리코나사나"
+    "desc": "옆구리를 늘리고 척추를 펴는 균형 자세."
   },
   {
     "category": "Standing",
-    "name": "Parivrtta Trikonasana",
+    "name": "파리브리타 트리코나사나",
     "image": "images/poses/141624.png",
-    "desc": "척추를 비틀면서 균형을 잡는 삼각 자세 변형.",
-    "pronunciation": "파리브리타 트리코나사나"
+    "desc": "척추를 비틀면서 균형을 잡는 삼각 자세 변형."
   },
   {
     "category": "Standing",
-    "name": "Utthita Parsvakonasana",
+    "name": "우티타 파르슈바코나사나",
     "image": "images/poses/141631.png",
-    "desc": "무릎을 굽히고 옆구리를 깊게 늘려주는 자세.",
-    "pronunciation": "우티타 파르슈바코나사나"
+    "desc": "무릎을 굽히고 옆구리를 깊게 늘려주는 자세."
   },
   {
     "category": "Standing",
-    "name": "Parivrtta Parsvakonasana",
+    "name": "파리브리타 파르슈바코나사나",
     "image": "images/poses/144935.png",
-    "desc": "옆구리 늘리기에 비틀기를 더해 척추를 정렬하는 자세.",
-    "pronunciation": "파리브리타 파르슈바코나사나"
+    "desc": "옆구리 늘리기에 비틀기를 더해 척추를 정렬하는 자세."
   },
   {
     "category": "Standing",
-    "name": "Prasarita Padottanasana",
+    "name": "프라사리타 파도타나사나",
     "image": "images/poses/141643.png",
-    "desc": "다리를 넓게 벌리고 상체를 숙여 척추를 늘리는 동작.",
-    "pronunciation": "프라사리타 파도타나사나"
+    "desc": "다리를 넓게 벌리고 상체를 숙여 척추를 늘리는 동작."
   },
   {
     "category": "Standing",
-    "name": "Parsvottanasana",
+    "name": "파르슈보타나사나",
     "image": "images/poses/141708.png",
-    "desc": "앞으로 뻗은 다리 위로 상체를 접어 균형과 유연성을 기르는 자세.",
-    "pronunciation": "파르슈보타나사나"
+    "desc": "앞으로 뻗은 다리 위로 상체를 접어 균형과 유연성을 기르는 자세."
   },
   {
     "category": "Standing",
-    "name": "Utthita Hasta Padangusthasana",
+    "name": "우티타 하스타 파당구스타사나",
     "image": "images/poses/141718.png",
-    "desc": "다리를 들어올려 손으로 엄지발가락을 잡고 균형을 유지.",
-    "pronunciation": "우티타 하스타 파당구스타사나"
+    "desc": "다리를 들어올려 손으로 엄지발가락을 잡고 균형을 유지."
   },
   {
     "category": "Standing",
-    "name": "Ardha Baddha Padmottanasana",
+    "name": "아르다 반다 파드모타나사나",
     "image": "images/poses/141741.png",
-    "desc": "한쪽 다리를 반 연꽃으로 접고 전굴하는 자세.",
-    "pronunciation": "아르다 반다 파드모타나사나"
+    "desc": "한쪽 다리를 반 연꽃으로 접고 전굴하는 자세."
   },
   {
     "category": "Standing",
-    "name": "Utkatasana",
+    "name": "우트카타사나",
     "image": "images/poses/145730.png",
-    "desc": "무릎을 굽히고 앉듯이 내려가면서 팔을 위로 들어올리는 자세.",
-    "pronunciation": "우트카타사나"
+    "desc": "무릎을 굽히고 앉듯이 내려가면서 팔을 위로 들어올리는 자세."
   },
   {
     "category": "Standing",
-    "name": "Virabhadrasana",
+    "name": "비라바드라사나",
     "image": "images/poses/141754.png",
-    "desc": "전사의 힘을 표현하는 자세. 하체를 단련하고 균형을 잡음.",
-    "pronunciation": "비라바드라사나"
+    "desc": "전사의 힘을 표현하는 자세. 하체를 단련하고 균형을 잡음."
   },
   {
     "category": "Seated",
-    "name": "Dandasana",
+    "name": "단다사나",
     "image": "images/poses/141819.png",
-    "desc": "척추를 곧게 세우고 다리를 뻗어 앉아 준비하는 자세.",
-    "pronunciation": "단다사나"
+    "desc": "척추를 곧게 세우고 다리를 뻗어 앉아 준비하는 자세."
   },
   {
     "category": "Seated",
-    "name": "Paschimottanasana",
+    "name": "파쉬모타나사나",
     "image": "images/poses/141832.png",
-    "desc": "상체를 앞으로 숙여 척추와 햄스트링을 늘리는 자세.",
-    "pronunciation": "파쉬모타나사나"
+    "desc": "상체를 앞으로 숙여 척추와 햄스트링을 늘리는 자세."
   },
   {
     "category": "Seated",
-    "name": "Purvottanasana",
+    "name": "푸르보타나사나",
     "image": "images/poses/141847.png",
-    "desc": "엉덩이를 들어올리고 몸 앞쪽을 열어주는 자세.",
-    "pronunciation": "푸르보타나사나"
+    "desc": "엉덩이를 들어올리고 몸 앞쪽을 열어주는 자세."
   },
   {
     "category": "Seated",
-    "name": "Ardha Baddha Padma Paschimottanasana",
+    "name": "아르다 반다 파드마 파쉬모타나사나",
     "image": "images/poses/141854.png",
-    "desc": "한쪽 다리를 반 연꽃 자세로 하고 전굴하는 자세.",
-    "pronunciation": "아르다 반다 파드마 파쉬모타나사나"
+    "desc": "한쪽 다리를 반 연꽃 자세로 하고 전굴하는 자세."
   },
   {
     "category": "Seated",
-    "name": "Triang Mukha Eka Pada Paschimottanasana",
+    "name": "트리앙 무카 에카 파다 파쉬모타나사나",
     "image": "images/poses/141904.png",
-    "desc": "한쪽 무릎을 접고 다른 다리를 뻗은 상태에서 전굴.",
-    "pronunciation": "트리앙 무카 에카 파다 파쉬모타나사나"
+    "desc": "한쪽 무릎을 접고 다른 다리를 뻗은 상태에서 전굴."
   },
   {
     "category": "Seated",
-    "name": "Janu Sirsasana",
+    "name": "자누 시르샤사나",
     "image": "images/poses/141914.png",
-    "desc": "무릎 옆에 발을 두고 상체를 숙여 척추를 늘리는 자세.",
-    "pronunciation": "자누 시르샤사나"
+    "desc": "무릎 옆에 발을 두고 상체를 숙여 척추를 늘리는 자세."
   },
   {
     "category": "Seated",
-    "name": "Marichyasana",
+    "name": "마리치아사나",
     "image": "images/poses/141935.png",
-    "desc": "한쪽 다리를 접고 팔을 감아 척추를 비트는 자세.",
-    "pronunciation": "마리치아사나"
+    "desc": "한쪽 다리를 접고 팔을 감아 척추를 비트는 자세."
   },
   {
     "category": "Seated",
-    "name": "Navasana",
+    "name": "나바사나",
     "image": "images/poses/141952.png",
-    "desc": "다리와 상체를 들어 올려 V자 균형을 유지하는 자세.",
-    "pronunciation": "나바사나"
+    "desc": "다리와 상체를 들어 올려 V자 균형을 유지하는 자세."
   },
   {
     "category": "Seated",
-    "name": "Bhujapidasana",
+    "name": "부자피다사나",
     "image": "images/poses/141914.png",
-    "desc": "팔로 다리를 조여 균형을 잡는 암 밸런스 자세.",
-    "pronunciation": "부자피다사나"
+    "desc": "팔로 다리를 조여 균형을 잡는 암 밸런스 자세."
   },
   {
     "category": "Seated",
-    "name": "Kurmasana",
+    "name": "쿠르마사나",
     "image": "images/poses/150516.png",
-    "desc": "팔을 벌리고 상체를 숙여 거북처럼 웅크린 자세.",
-    "pronunciation": "쿠르마사나"
+    "desc": "팔을 벌리고 상체를 숙여 거북처럼 웅크린 자세."
   },
   {
     "category": "Seated",
-    "name": "Supta Kurmasana",
+    "name": "수프타 쿠르마사나",
     "image": "images/poses/150718.png",
-    "desc": "거북 자세에서 더 깊게 숙여 몸을 감싸는 자세.",
-    "pronunciation": "수프타 쿠르마사나"
+    "desc": "거북 자세에서 더 깊게 숙여 몸을 감싸는 자세."
   },
   {
     "category": "Seated",
-    "name": "Garbha Pindasana",
+    "name": "가르바 핀다사나",
     "image": "images/poses/142106.png",
-    "desc": "팔을 다리 사이로 넣고 태아처럼 웅크린 자세.",
-    "pronunciation": "가르바 핀다사나"
+    "desc": "팔을 다리 사이로 넣고 태아처럼 웅크린 자세."
   },
   {
     "category": "Seated",
-    "name": "Kukkutasana",
+    "name": "쿠쿠타사나",
     "image": "images/poses/142116.png",
-    "desc": "팔로 몸을 들어 올려 닭처럼 서는 자세.",
-    "pronunciation": "쿠쿠타사나"
+    "desc": "팔로 몸을 들어 올려 닭처럼 서는 자세."
   },
   {
     "category": "Seated",
-    "name": "Baddha Konasana",
+    "name": "반다 코나사나",
     "image": "images/poses/142122.png",
-    "desc": "발바닥을 모으고 무릎을 옆으로 벌려 나비자세.",
-    "pronunciation": "반다 코나사나"
+    "desc": "발바닥을 모으고 무릎을 옆으로 벌려 나비자세."
   },
   {
     "category": "Seated",
-    "name": "Upavistha Konasana",
+    "name": "우파비스타 코나사나",
     "image": "images/poses/142116.png",
-    "desc": "다리를 벌리고 상체를 숙이는 전굴 자세.",
-    "pronunciation": "우파비스타 코나사나"
+    "desc": "다리를 벌리고 상체를 숙이는 전굴 자세."
   },
   {
     "category": "Seated",
-    "name": "Supta Konasana",
+    "name": "수프타 코나사나",
     "image": "images/poses/142223.png",
-    "desc": "누운 자세에서 다리를 벌려 숙이는 전굴.",
-    "pronunciation": "수프타 코나사나"
+    "desc": "누운 자세에서 다리를 벌려 숙이는 전굴."
   },
   {
     "category": "Seated",
-    "name": "Supta Padangusthasana",
+    "name": "수프타 파당구스타사나",
     "image": "images/poses/142203.png",
-    "desc": "누워서 한쪽 다리를 들어 손으로 발가락을 잡는 자세.",
-    "pronunciation": "수프타 파당구스타사나"
+    "desc": "누워서 한쪽 다리를 들어 손으로 발가락을 잡는 자세."
   },
   {
     "category": "Seated",
-    "name": "Ubhaya Padangusthasana",
+    "name": "우바야 파당구스타사나",
     "image": "images/poses/142233.png",
-    "desc": "양손으로 양 발가락을 잡고 균형을 잡는 자세.",
-    "pronunciation": "우바야 파당구스타사나"
+    "desc": "양손으로 양 발가락을 잡고 균형을 잡는 자세."
   },
   {
     "category": "Seated",
-    "name": "Urdhva Mukha Paschimottanasana",
+    "name": "우르드바 무카 파쉬모타나사나",
     "image": "images/poses/142341.png",
-    "desc": "누운 상태에서 다리를 들어올려 잡는 자세.",
-    "pronunciation": "우르드바 무카 파쉬모타나사나"
+    "desc": "누운 상태에서 다리를 들어올려 잡는 자세."
   },
   {
     "category": "Seated",
+    "name": "세투 반다사나",
     "image": "images/poses/142240.png",
-    "desc": "엉덩이와 다리를 들어올려 다리와 척추를 강화하는 자세.",
-    "pronunciation": "세투 반다사나"
+    "desc": "엉덩이와 다리를 들어올려 다리와 척추를 강화하는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Salamba Sarvangasana",
+    "name": "살람바 사르방가사나",
     "image": "images/poses/142315.png",
-    "desc": "어깨로 몸을 지탱하며 거꾸로 서는 자세. 혈액순환을 돕고 집중력 향상.",
-    "pronunciation": "살람바 사르방가사나"
+    "desc": "어깨로 몸을 지탱하며 거꾸로 서는 자세. 혈액순환을 돕고 집중력 향상."
   },
   {
     "category": "Finishing",
-    "name": "Halasana",
+    "name": "할라사나",
     "image": "images/poses/142223.png",
-    "desc": "다리를 머리 위로 넘겨 쟁기처럼 만드는 자세.",
-    "pronunciation": "할라사나"
+    "desc": "다리를 머리 위로 넘겨 쟁기처럼 만드는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Karnapidasana",
+    "name": "카르나피다사나",
     "image": "images/poses/142332.png",
-    "desc": "다리를 내려 무릎으로 귀를 막아 척추를 깊게 스트레칭.",
-    "pronunciation": "카르나피다사나"
+    "desc": "다리를 내려 무릎으로 귀를 막아 척추를 깊게 스트레칭."
   },
   {
     "category": "Finishing",
-    "name": "Pindasana",
+    "name": "핀다사나",
     "image": "images/poses/142346.png",
-    "desc": "어깨서기 상태에서 무릎을 굽혀 태아처럼 웅크린 자세.",
-    "pronunciation": "핀다사나"
+    "desc": "어깨서기 상태에서 무릎을 굽혀 태아처럼 웅크린 자세."
   },
   {
     "category": "Finishing",
-    "name": "Matsyasana",
+    "name": "맛챠사나",
     "image": "images/poses/142355.png",
-    "desc": "등을 젖히고 가슴을 열어주는 자세.",
-    "pronunciation": "맛챠사나"
+    "desc": "등을 젖히고 가슴을 열어주는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Sirsasana",
+    "name": "시르샤사나",
     "image": "images/poses/142404.png",
-    "desc": "머리로 몸을 지탱하며 거꾸로 서는 자세. 집중과 균형 훈련.",
-    "pronunciation": "시르샤사나"
+    "desc": "머리로 몸을 지탱하며 거꾸로 서는 자세. 집중과 균형 훈련."
   },
   {
     "category": "Finishing",
-    "name": "Baddha Padmasana",
+    "name": "반다 파드마사나",
     "image": "images/poses/142411.png",
-    "desc": "연꽃자세에서 손을 뒤로 감아 잡는 자세.",
-    "pronunciation": "반다 파드마사나"
+    "desc": "연꽃자세에서 손을 뒤로 감아 잡는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Yoga Mudra",
+    "name": "요가 무드라",
     "image": "images/poses/142445.png",
-    "desc": "연꽃자세에서 상체를 숙여 내적인 집중을 돕는 자세.",
-    "pronunciation": "요가 무드라"
+    "desc": "연꽃자세에서 상체를 숙여 내적인 집중을 돕는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Padmasana",
+    "name": "파드마사나",
     "image": "images/poses/152239.png",
-    "desc": "양 발을 반대쪽 허벅지 위에 올려 앉는 명상 자세.",
-    "pronunciation": "파드마사나"
+    "desc": "양 발을 반대쪽 허벅지 위에 올려 앉는 명상 자세."
   },
   {
     "category": "Finishing",
-    "name": "Tolasana",
+    "name": "톨라사나",
     "image": "images/poses/142503.png",
-    "desc": "연꽃자세에서 팔로 몸을 들어올려 균형 잡는 자세.",
-    "pronunciation": "톨라사나"
+    "desc": "연꽃자세에서 팔로 몸을 들어올려 균형 잡는 자세."
   },
   {
     "category": "Finishing",
-    "name": "Savasana",
+    "name": "샤바사나",
     "image": "images/poses/142306.png",
-    "desc": "완전히 누워서 휴식하는 자세. 수련의 마무리.",
-    "pronunciation": "샤바사나"
+    "desc": "완전히 누워서 휴식하는 자세. 수련의 마무리."
   }
 ]
